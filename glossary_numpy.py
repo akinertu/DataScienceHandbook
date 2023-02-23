@@ -5,6 +5,7 @@ import numpy as np
     np.zeros(10, dtype=int) # Create a length-10 integer array filled with zeros
     np.zeros((3, 5), dtype=int) # Create a 3x5 floating-point array filled with zeros
     np.full((3, 5), 3.14) # Create a 3x5 array filled with 3.14
+    np.zeros_like(arr) #Return an array of zeros with the same shape and type as a given array.
     np.arange(0, 20, 2) # Create an array filled with a linear sequence
     np.linspace(0, 1, 5) # Create an array of five values evenly spaced between 0 and 1
     np.random.random((3, 3)) # Create a 3x3 array of uniformly distributed random values between 0 and 1
@@ -48,3 +49,19 @@ import numpy as np
     np.argmin np.argmax #index of maximum value
     np.mean np.median np.std np.var
     np.any np.all #Evaluate whether all elements are true
+    np.array([1, 2, 3, 4, 5]) < 3 #array with a Boolean data type np.less(x, 3)
+    np.count_nonzero(x < 6) #number of True entries in a Boolean array
+    np.sum(x < 6, axis=1) #how many values less than 6 in each row?
+    np.any(x > 8) # are there any values greater than 8?
+    np.all(x < 10) # are all values less than 10?
+    np.sum((inches > 0.5) & (inches < 1)) #all days with rain less than four inches and greater than one inch?
+        & np.bitwise_and
+        | np.bitwise_or
+        ^ np.bitwise_xor
+        ~ np.bitwise_not
+    arr[arr < 5] #array filled with all the values that meet thiscondition
+    np.sort(arr) 
+    np.argsort(arr) #indices of the sortedelements
+    arr.sort() #sort the array in-place
+    np.sort(arr, axis=0) # sort each column of arr
+    np.partition(x, 3) #new array with the smallest K values to the left of the partition
