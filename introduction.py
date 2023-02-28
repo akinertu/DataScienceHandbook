@@ -17,3 +17,6 @@ Scikit-Learn for machine learning
 The Jupyter notebook is a browser-based graphical interface to the IPython shell.
 
 Broadcasting #allows binary operations to be performed on arrays of different sizes
+NumPy array has an implicitly defined integer index used
+to access the values, the Pandas Series has an explicitly defined index associated with
+the values.

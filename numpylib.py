@@ -1,4 +1,4 @@
-# NUMPY MODULE
+# NUMPY MODULE (ndarray object)
 import numpy as np
 #numpy array
     np.array([1, 4, 2, 5, 3])
